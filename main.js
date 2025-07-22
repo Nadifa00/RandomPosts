@@ -13,3 +13,10 @@ readMoreBtn.forEach(element => {
   });
 });
 
+const likeButtons = document.querySelectorAll('.like');
+
+likeButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    button.classList.toggle('liked');
+  });
+});
